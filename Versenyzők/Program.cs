@@ -43,7 +43,7 @@ namespace Versenyzők
 
         private static void HarmadikFeladat()
         {
-            
+            Console.WriteLine($"3.feladat: {lista.Count}");
         }
 
         private static void MasodikFeladat()
