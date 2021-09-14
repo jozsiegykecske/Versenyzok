@@ -28,7 +28,17 @@ namespace Versenyzők
 
         private static void HatodikFeladat()
         {
-            
+            int legkisebb = lista[0].Rajtszam;
+            string nemzetiseg="";
+            foreach (var l in lista)
+            {
+                if (l.Rajtszam!=0 && l.Rajtszam<legkisebb)
+                {
+                    legkisebb = l.Rajtszam;
+                    nemzetiseg = l.Nemzetiseg;
+                }
+            }
+            Console.WriteLine($"6.feladat: {nemzetiseg}");
         }
 
         private static void OtodikFeladat()
