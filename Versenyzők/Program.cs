@@ -23,7 +23,41 @@ namespace Versenyzők
 
         private static void HetedikFeladat()
         {
-            
+            List<int> rajtszamok = new List<int>();
+            List<int> dupla = new List<int>();
+            //foreach (var l  in lista)
+            //{
+            //    if (!rajtszamok.Contains(l.Rajtszam) && l.Rajtszam!=0)
+            //    {
+            //        rajtszamok.Add(l.Rajtszam);
+            //    }
+            //}
+            //foreach (var l in lista)
+            //{
+            //    if (rajtszamok.Contains(l.Rajtszam) && l.Rajtszam != 0)
+            //    {
+            //        dupla.Add(l.Rajtszam);
+            //    }
+            //}
+            for (int i = 0; i < lista.Count; i++)
+            {
+                int szamlalo = 0;
+                foreach (var l in lista)
+                {
+                    if (lista[i].Rajtszam==l.Rajtszam && l.Rajtszam!=0 && !dupla.Contains(lista[i].Rajtszam))
+                    {
+                        dupla.Add(lista[i].Rajtszam);
+                    }
+                }
+                //if (szamlalo!=0)
+                //{
+                //    dupla.Add(lista[i].Rajtszam);
+                //}
+            }
+            for (int i = 0; i < dupla.Count; i++)
+            {
+                Console.Write(dupla[i] + " ");
+            }
         }
 
         private static void HatodikFeladat()
