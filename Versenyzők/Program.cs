@@ -38,7 +38,7 @@ namespace Versenyzők
 
         private static void NegyedikFeladat()
         {
-            
+            Console.WriteLine($"4.feladat: {lista[lista.Count-1].Nev}");
         }
 
         private static void HarmadikFeladat()
