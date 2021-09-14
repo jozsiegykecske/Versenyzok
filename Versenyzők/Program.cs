@@ -33,7 +33,15 @@ namespace Versenyzők
 
         private static void OtodikFeladat()
         {
-            
+            Console.WriteLine("5.feladat:");
+            foreach (var l in lista)
+            {
+                string[] atmeneti = l.Szuletesi_Datum.Split('.');
+                if (Convert.ToInt32(atmeneti[0])<=1900)
+                {
+                    Console.WriteLine($"\t{l.Nev} ({atmeneti[0]}. {atmeneti[1]}. {atmeneti[2]}.)");
+                }
+            }
         }
 
         private static void NegyedikFeladat()
